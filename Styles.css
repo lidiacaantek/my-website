@@ -1,0 +1,320 @@
+/* Reset beberapa default browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('u.jpg') no-repeat center center/cover;
+    color: #333;
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 100%;
+    height: 500px;
+}
+
+/* Header */
+header {
+    background-color: #ff66b2;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header .logo-img {
+    width: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+header .logo h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff99cc;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('https://via.placeholder.com/1500x800/ff66b2/ffffff?text=Kue+Lezat');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero button {
+    padding: 12px 25px;
+    background-color: #ff3385;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #ff66b2;
+    transform: scale(1.1);
+}
+
+/* Produk Section */
+.produk {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #fff5f5;
+}
+
+.produk h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff3385;
+}
+
+.produk-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.produk-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.produk-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.produk-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.produk-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.produk-item p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.produk-item button {
+    padding: 10px 20px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.produk-item button:hover {
+    background-color: #ff3385;
+}
+
+/* Tentang Kami */
+.tentang {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffe6f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tentang h2 {
+    font-size: 36px;
+    color: #ff3385;
+    margin-bottom: 20px;
+}
+
+.tentang p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 50px; /* Tambahkan jarak */
+}
+
+/* Testimoni Section */
+.testimoni {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff5f5;
+}
+
+.testimoni h2 {
+    font-size: 36px;
+    color: #ff3385;
+    margin-bottom: 30px;
+}
+
+.testimoni-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.testimoni-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimoni-item:hover {
+    transform: translateY(-10px);
+}
+
+.testimoni-item p {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimoni-item strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+    color: #ff3385;
+    margin-bottom: 50px; /* Tambahkan jarak */
+}
+
+/* Kontak Section */
+.kontak {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffe6f2;
+}
+
+.kontak h2 {
+    font-size: 36px;
+    color: #ff3385;
+    margin-bottom: 20px;
+}
+
+.kontak p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.kontak a {
+    color: #ff3385;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    margin-bottom: 50px; /* Tambahkan jarak */
+}
+
+/* Footer */
+footer {
+    background-color: #ff3385;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .produk-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produk-item {
+        width: 90%;
+    }
+
+    .testimoni-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimoni-item {
+        width: 90%;
+    }
+}
